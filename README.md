@@ -15,7 +15,7 @@ operam em paralelo, enquanto o supervisório monitora sensores, gera alarmes, re
 
 | Nome | GitHub |
 |------|--------|
-| Bruna Oppermann | _a definir_ |
+| Bruna Oppermann | [@OppermannBruna](https://github.com/OppermannBruna) |
 | Enzo Rodrigues Ribeiro Lemos | [@rodrigris1](https://github.com/rodrigris1) |
 | Samuel Silva Oliveira | [@SamuelOliveira1606](https://github.com/SamuelOliveira1606) |
 
