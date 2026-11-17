@@ -16,4 +16,45 @@ public abstract class Equipamento {
         this.id = id;
         this.nome = nome;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public EstadoEquipamento getEstado() {
+        return estado;
+    }
+
+    public long getCiclosExecutados() {
+        return ciclosExecutados;
+    }
+
+    public synchronized void ligar() {
+        if (estado != EstadoEquipamento.PARADO) {
+            throw new IllegalStateException("Não é possível ligar o equipamento " + id + " está em " + estado);
+        }
+        System.out.println("Ligando o equipamento " + nome + " " + id);
+        estado = EstadoEquipamento.OPERANDO;
+    }
+
+    public synchronized void desligar() {
+        if (estado != EstadoEquipamento.OPERANDO) {
+            throw new IllegalStateException("Não é possível desligar o equipamento " + id + " está em " + estado);
+        }
+        System.out.println("Desligando o equipamento " + nome + " " + id);
+        estado = EstadoEquipamento.PARADO;
+    }
+
+    public final synchronized void ciclo() {
+        if (estado == EstadoEquipamento.OPERANDO) {
+            executarCiclo();
+            ciclosExecutados++;
+        }
+    }
+    protected abstract void executarCiclo();
+    public abstract String getTipo();
 }
