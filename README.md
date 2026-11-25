@@ -2,7 +2,8 @@
 
 Projeto final da disciplina **C06 – Programação Orientada a Objetos**, Prof. Christopher Lima.
 
-> 🚧 Em desenvolvimento. A proposta de arquitetura está em [`docs/arquitetura.md`](docs/arquitetura.md).
+> **Este repositório foi o ponto de partida do projeto.** A versão final, com o código completo, o UML e o README atualizado, está em
+> **https://github.com/OppermannBruna/C06-Projeto-Final-MiniScada**
 
 ## Sobre o projeto
 
